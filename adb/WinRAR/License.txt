@@ -1,0 +1,132 @@
+     CONTRATO DE LICENÇA DO USUÁRIO FINAL
+
+     O seguinte contrato relativo ao gerenciador de arquivos RAR (e suas 
+     versões para o Windows - WinRAR) - doravante referido como “software”
+     - é feito entre a win.rar GmbH - doravante referida como “licenciante” 
+     - e quem estiver instalado, acessando ou utilizando este software em
+     qualquer outra maneira - doravante referido como “usuário”.
+
+  1. O autor e proprietário do copyright do software é Alexander L. Roshal. 
+     O licenciante e portanto o fornecedor da licença e proprietário dos 
+     direitos de uso mundiais exclusivos, incluindo o direito de reprodução,
+     distribuição e tornar o software disponível para o público sob qualquer
+     forma é a win.rar GmbH, Marienstr. 12, 10117 Berlin, Alemanha.
+
+  2. O software é dsitribuído como versão de avaliação antes da compra. Isto
+     significa que qualquer pessoa pode utilizar o software durante o período
+     de avaliação de no máximo 40 dias sem qualquer cobrança. Passado este
+     período, o usuário deverá comprar a licença para continuar a utilizar do
+     software.
+
+  3. A versão de avaliação do software pode ser distribuída livremente, com
+     exceção às formas mencionadas abaixo, desde que o formato de distribuição
+     não seja modificado em qualquer maneira.
+
+     a. Ninguém poderá distribuir partes em separado do formato de distribuição,
+        com a exceção dos componentes do UnRAR, sem permissão por escrito.
+
+     b. A versão de avaliação não-licenciada do software não poderá ser
+        distribuída dentro de qualquer pacote de softwares sem permissão por
+        escrito.
+
+     c. O arquivo de instalação não modificado do WinRAR deve ser fornecido 
+        puro e desvinculado. Qualquer vínculo é proibido. Em particular, o 
+        uso de qualquer instalação ou download de software que estiver 
+        fornecendo qualquer tipo de pacotes de download proibido a menos que 
+        concedido pela win.rar GmbH, e por escrito.
+	
+     d. Geradores de chaves, chaves, Hacks/cracks, não podem ser incluídos,
+        referidos ou direcionados a ele pelo distribuidor da versão de 
+        avaliação.
+
+     e. Em caso de violação das condições precedentes do subsídio prescreverá 
+        imediatamente e automaticamente.
+
+  4. A versão de avaliação do software poderá mostrar uma caixa de diálogo
+     com um lembrete do registro. Dependendo da versão do software e da 
+     configuração, tal caixa de diálogo poderá conter tanto um texto pré-
+     definido e links carregados localmente, ou uma página da web carregada
+     via internet. Tal página poderá conter instruções para a aquisição da
+     licença ou outras informações à escolha do licenciante, incluindo 
+     propaganda. Ao abrir uma página web, o software transfere apenas os
+     parâmetros que são tecnicamente necessários pelo protocolo HTTP para
+     abrir uma página da web em um navegador.
+
+  5. O software é distribuído de forma "com apresentado". Não há nenhuma
+     garantia de qualquer tipo implícita ou explícita. O usuário o utiliza
+     por sua conta e risco. Nem o autor, nem o licenciante, nem os agentes
+     do licenciante podem ser responsabilizados por perda de dados, danos,
+     lucros cessantes ou qualquer outro tipo de prejuízo advindo do uso
+     correto ou incorreto deste software. 
+
+  6. Há dois tipos básicos de licenças emitidas para este software. Elas são:
+
+     a. Licença de uso para um único computador. O usuário compra uma licença
+        para o uso do software em um computador.
+
+        Usuários domésticos podem utilizar sua única licença de uso em todos
+        os computadores e dispositivos móveis (drives USB, discos rígidos
+        externos, etc.) quer forem de propriedade do adquirente da licença.
+
+        Usuários comerciais necessitam adquirir uma licença por computador
+        ou dispositivo móvel em que o software estiver instalado.
+
+     b. Uma licença múltipla de uso. O usuário compra um número de licenças 
+        de uso para sua utilização ou de seus empregados no mesmo número de
+        computadores.
+
+        Em um ambiente de rede (servidor/cliente), o usuário deverá comprar
+        uma cópia da licença para cada cliente em separado (estação de trabalho)
+        na qual o software estiver instalado, for utilizado ou acessado. Uma
+        cópia distinta da licença para cada cliente (estação de trabalho) é
+        necessária a despeito dos clientes (estações de trabalho) utilizarem
+        o simultânea ou alternadamente. Se, por exemplo, o usuário quiser
+        ter 9 clientes (estações de trabalho) diferentes com acesso ao RAR, 
+        deverá comprar 9 cópias da licença.
+
+     Um usuário que houver comprado uma licença possui direito não-exclusivo
+     de utilizar o software na quantidade de computadores conforme definido
+     pelos termos de licenciamento acima, de acordo com a quantidade de 
+     licenças compradas, para quaisquer propósitos legais.
+
+  7. Não há taxas adicionais de licença, além do custo da licença, associadas
+     com a criação e distribuição de arquivos, volumes, arquivos de 
+     auto-extração ou volumes de auto-extração RAR. Proprietários de uma
+     licença podem utilizar suas cópias do software para criar arquivos
+     e arquivos de auto-extração e distribuir tais arquivos de forma gratuita
+     sem quaisquer royalties adicionais.
+
+  8. O software licenciado não pode ser alugado ou consignado, mas pode ser
+     permanentemente transferido, em sua totalidade, se o recebedor concordar
+     com os termos desta licença.
+
+  9. Para comprar uma licença, por favor leia o arquivo order.htm oferecido
+     com este software para detalhes.
+
+ 10. Você não poderá usar, copiar, emular, clonar, alugar, consignar, vender,
+     modificar, descompilar, separar, realizar qualquer tipo de engenharia
+     reversa o transferir o software licenciado, ou qualquer parte do software
+     licenciado, exceto quando permitido por este contrato. Qualquer uso
+     não-autorizado resultará no encerramento imediato e automático desta
+     licença, e poderá resultar em processos civis ou criminais.
+
+     Nem o código binário do RAR, do WinRAR, código-fonte do UnRAR ou código
+     binário do UnRAR podem ser usados ou serem alvo de engenharia reversa
+     a fim de recriar o algoritmo de compressão do RAR, cujos direitos são
+     reservados, sem permissão por escrito.
+     
+     O software pode utilizar componentes desenvolvidos e/ou cujos direitos
+     autorais remetam a terceiros. Por favor leia o tópico do arquivo de 
+     ajuda "Reconhecimentos" para o WinRAR ou o arquivo de texto acknow.txt 
+     para as demais versões do RAR para detalhes.
+
+ 11. Este Contrato de Licença de Uso foi criado única e exclusivamente sob
+     a lei da Alemanha. Caso você seja um revendedor, o fóro do escritório
+     registrado da win.rar GmbH em Berlim/Alemanha terá a exclusiva 
+     jurisdição sobre toda e qualquer disputar que sobrevier em relação ao
+     Contrado de Licença de Uso e sua validade.
+
+ 12. A instalação e utilização do software implica na aceitaçãço destes
+     termos e condições da licença. se você não concorda com os termos desta
+     licença, deverá remover todos os arquivos do software dos seus 
+     dispositivos de armazenamento e encerrar a utilizaçaõ do software.

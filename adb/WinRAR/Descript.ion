@@ -1,0 +1,23 @@
+7zxa.dll             Biblioteca de descompressão 7z
+Default.SFX          Módulos GUI RAR SFX
+Default64.SFX        Módulo 64-bit do GUI RAR SFX
+Descript.ion         Descrição dos arquivos
+License.txt          Licença para uso e distribuição
+Order.htm            Formulário de registro
+Rar.exe              Console RAR
+Rar.txt              Manual do console RAR
+RarLng.dll           Recursos de idioma
+RarExt.dll           Extensão de integração do WinRAR
+RarExt32.dll         Extensão para o contexto do WinRAR para Windows x86
+RarExt64.dll         Extensão para o contexto do WinRAR para Windows x64
+RarFiles.lst         Ordem de classificação por arquivos sólidos
+ReadMe.txt           Breve visão geral do WinRAR
+Uninstall.exe        Programa de desinstalação
+Uninstall.lst        Lista de arquivos à desinstalar
+UnRAR.exe            Ferramenta gratuita para extrair arquivos RAR
+WhatsNew.txt         O que há de novo nesta versão
+WinCon.SFX           Módulos de console RAR SFX
+WinRAR.exe           WinRAR
+WinRAR.chm           Arquivo de ajuda do WinRAR
+Zip.SFX              Módulos GUI ZIP SFX
+Zip64.SFX            Módulo 64-bit do GUI ZIP SFX

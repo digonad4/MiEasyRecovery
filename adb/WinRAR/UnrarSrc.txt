@@ -1,0 +1,3 @@
+As fontes do Unrar,  biblioteca unrar.dll e versões  originais dos 
+módulos SFX podem agora ser descarregados da página oficial do RAR 
+em www.rarlab.com
