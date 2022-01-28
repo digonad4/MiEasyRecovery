@@ -6,35 +6,28 @@ set adb="%cd%\adb\adb.exe"
 set fastboot="%cd%\adb\fastboot.exe"
 cls 
 :RecTWRP
-set rec=Twrp
-set vrec= nul
+title Selecione o Twrp 
 cls
 echo.
 echo -----------------------------------------------------------------
-echo   Noob Master %rec%                       Device - Sunny Mojito 
+echo   Recovery  --------------  Noob Master - Device - Sunny Mojito 
 echo -----------------------------------------------------------------
 echo.
+echo   Twrp
+echo.
+echo    1 ) 3.5.2
+echo    2 ) 3.6.0
 echo.
 echo.
-echo 1 ) 0.0.0
-echo 2 ) 3.5.2
-echo 3 ) 3.6.0
-echo 4 ) 15.15.50
+echo.
 echo.
 echo.
 echo.
 set nb=
-set /p "nb=Digite algo %UsERNAME% > "
-if '%nb%' == '1' goto RecoveryTwrp000
-if '%nb%' == '2' goto RecoveryTwrp352
-if '%nb%' == '3' goto RecoveryTwrp360
-if '%nb%' == '4' goto RecoveryTwrp151550
+set /p "nb= Digite algo %UsERNAME% > "
+if '%nb%' == '1' goto RecoveryTwrp352
+if '%nb%' == '2' goto RecoveryTwrp360
 goto RecTWRP
-
-:RecoveryTwrp000
-set vRec=000
-set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/twrp/000/000.rar
-goto Recovery
 :RecoveryTwrp352
 set vRec=352
 set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/twrp/352/352.rar
@@ -42,9 +35,6 @@ goto Recovery
 :RecoveryTwrp360
 set vRec=360
 set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/twrp/360/360.rar
-:RecoveryTwrp151550
-set vRec=151550
-set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/twrp/151550/151550.rar
 goto Recovery
 :Recovery
 title Noob Master %rec% %vRec% 
