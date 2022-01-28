@@ -6,7 +6,7 @@ pushd "%~dp0"
 set adb="%cd%\adb\adb.exe"
 set fastboot="%cd%\adb\fastboot.exe"
 cls 
-set recovery=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/
+set recovery=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/twrp/
 set vRec=3.5.2
 :INI
 cls
@@ -39,8 +39,8 @@ echo.
 echo  Espere...
 echo.
 echo.
-mkdir adb\file\twrp\mojito\%vRec%\
-Powershell -command "& { (New-Object Net.WebClient).DownloadFile('%recovery%%vRec%', 'adb\file\twrp\Mojito\%vRec%\%vRec%.rar') }"
+mkdir adb\device\mojito\recovery\twrp\%vRec%\
+Powershell -command "& { (New-Object Net.WebClient).DownloadFile('%recovery%%vRec%', 'adb\device\mojito\recovery\twrp\%vRec%\%vRec%.rar') }"
 cls 
 echo.
 echo  Arquivo Baixado 
@@ -52,12 +52,12 @@ echo.
 pause > nul
 echo  Extraindo arquivo...
 echo.
-"%cd%\adb\WinRAR\WinRAR.exe" x -y -c "%cd%\adb\file\twrp\Mojito\%vRec%\%vRec%.rar" "%cd%\adb\file\twrp\Mojito\%vRec%\"
+"%cd%\adb\WinRAR\WinRAR.exe" x -y -c "%cd%\adb\device\mojito\recovery\twrp\%vRec%\%vRec%.rar" "%cd%\adb\device\mojito\recovery\twrp\%vRec%\"
 echo.
 echo.
 echo  Deletando arquivo %vRec%.rar 
 echo.
-del "%cd%\adb\file\twrp\Mojito\%vRec%\%vRec%.rar"
+del "%cd%\adb\device\mojito\recovery\twrp\%vRec%\%vRec%.rar"
 echo.
 echo.
 echo  Pressione algo para voltar ao menu.
@@ -70,7 +70,7 @@ echo  Enviando o comando para o seu device conecte o celular no modo
 echo                         FASTBOOT
 echo.
 echo.
-%fastboot% boot "%cd%\adb\file\twrp\Mojito\%vRec%\%vRec%.img"
+%fastboot% boot "%cd%\adb\device\mojito\recovery\twrp\%vRec%\%vRec%.img"
 echo.
 echo.
 echo.
