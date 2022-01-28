@@ -1,4 +1,5 @@
 @echo off
+title Noob Master TWRP 3.6.0 
 mode 65,15
 chcp 65001
 pushd "%~dp0"
