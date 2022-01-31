@@ -228,23 +228,23 @@ if '%nb%' == 'E' goto SelRecMojito
 goto RecOfoxMojito
 :RecoveryOfox111
 set vRec=111
-set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/Ofox/111/111.rar
+set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/ofox/111/111.rar
 goto :RecoveryOfox
 :RecoveryOfox111B
 set vRec=111B
-set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/Ofox/111B/111B.rar
+set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/ofox/111B/111B.rar
 goto :RecoveryOfox
 :RecoveryOfox
 title Noob Master %rec% %vRec% 
 cls
 echo.
 echo ------------------------------------------------------------------------
-echo   Twrp %vRec%                            Noob Master - Device - Mojito 
+echo   Orange Fox %vRec%                      Noob Master - Device - Mojito 
 echo ------------------------------------------------------------------------
 echo.
 echo.
-echo    1 ) Baixe e extraia o Twrp %vRec%.rar 
-echo    2 ) Boot no Twrp %vRec%
+echo    1 ) Baixe e extraia o Ofox %vRec%.rar 
+echo    2 ) Boot no Ofox %vRec%
 echo    E ) Voltar 
 echo.
 echo.
@@ -271,6 +271,7 @@ echo.
 echo.
 mkdir adb\device\mojito\recovery\Ofox\%vRec%\
 Powershell -command "& { (New-Object Net.WebClient).DownloadFile('%linkA1%', 'adb\device\mojito\recovery\Ofox\%vRec%\%vRec%.rar') }"
+pause
 cls 
 echo.
 echo    Arquivo Baixado 
