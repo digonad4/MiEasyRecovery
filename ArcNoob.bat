@@ -1,31 +1,90 @@
 @echo off
+color 03
 mode 72,15
 chcp 65001
 pushd "%~dp0"
 set adb="%cd%\adb\adb.exe"
 set fastboot="%cd%\adb\fastboot.exe"
 cls 
-:SelRec
-title Selecione o Recovery 
+:::::: SELECIONAR DEVICE
+:::::: SELECIONAR DEVICE
+:::::: SELECIONAR DEVICE
+:::::: SELECIONAR DEVICE
+:::::: SELECIONAR DEVICE
+:::::: SELECIONAR DEVICE
+:::::: SELECIONAR DEVICE
+:SelDevice
+title Selecione o Device !
 cls
 echo.
 echo ------------------------------------------------------------------------
-echo   Recovery                            Noob Master - Device - Mojito 
+echo   Selecione o dispositivo                                Noob Master 
 echo ------------------------------------------------------------------------
 echo.
 echo.
-echo    1 ) TWRP
-echo    2 ) OFOX
-echo.
+echo    1 ) Mi A2
+echo    2 ) Wayne
+echo    3 ) Mojito
 echo.
 echo.
 echo.
 echo.
 set nb=
 set /p "nb= Digite algo %UsERNAME% > "
-if '%nb%' == '1' goto RecTWRP
-if '%nb%' == '2' goto RecOFOX
-goto SelRec
+if '%nb%' == '1' goto SelRecJasmine
+if '%nb%' == '2' goto SelRecWayne
+if '%nb%' == '3' goto SelRecMojito
+goto SelDevice
+:SelRecJasmine
+cls
+echo.
+echo.
+echo    Em desenvolvimento...........
+echo.
+echo.
+echo.
+timeout 10 > nul
+goto SelDevice
+:SelRecWayne
+cls
+echo.
+echo.
+echo    Em desenvolvimento...........
+echo.
+echo.
+echo.
+timeout 10 > nul
+goto SelDevice
+:::::: SELECIONAR RECOVERY
+:::::: SELECIONAR RECOVERY
+:::::: SELECIONAR RECOVERY
+:::::: SELECIONAR RECOVERY
+:::::: SELECIONAR RECOVERY
+:::::: SELECIONAR RECOVERY
+:::::: SELECIONAR RECOVERY
+:SelRecMojito
+title Selecione o Recovery 
+cls
+echo.
+echo ------------------------------------------------------------------------
+echo   Recovery                             Noob Master - Device - Mojito 
+echo ------------------------------------------------------------------------
+echo.
+echo.
+echo    1 ) TWRP
+echo    2 ) OFOX
+echo    E ) Voltar 
+echo.
+echo.
+echo.
+echo.
+set nb=
+set /p "nb= Digite algo %UsERNAME% > "
+if '%nb%' == '1' goto RecTWRPMojito
+if '%nb%' == '2' goto RecOFOXMojito
+if '%nb%' == 'e' goto SelDevice
+if '%nb%' == 'E' goto SelDevice
+goto SelRecMojito
 :::::: TWRP RECOVERY
 :::::: TWRP RECOVERY
 :::::: TWRP RECOVERY
@@ -33,7 +92,7 @@ goto SelRec
 :::::: TWRP RECOVERY
 :::::: TWRP RECOVERY
 :::::: TWRP RECOVERY
-:RecTWRP
+:RecTWRPMojito
 title Selecione o Twrp 
 cls
 echo.
@@ -53,9 +112,10 @@ set nb=
 set /p "nb= Digite algo %UsERNAME% > "
 if '%nb%' == '1' goto RecoveryTwrp352
 if '%nb%' == '2' goto RecoveryTwrp360
-if '%nb%' == 'e' goto SelRec
-if '%nb%' == 'E' goto SelRec
-goto RecTWRP
+if '%nb%' == 'e' goto SelRecMojito
+if '%nb%' == 'E' goto SelRecMojito
+goto RecTWRPMojito
+
 :RecoveryTwrp352
 set vRec=352
 set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/twrp/352/352.rar
@@ -84,8 +144,8 @@ set nb=
 set /p "nb=Digite algo %UsERNAME% > "
 if '%nb%' == '1' goto DownTwrp 
 if '%nb%' == '2' goto BootIn
-if '%nb%' == 'E' goto RecTWRP
-if '%nb%' == 'e' goto RecTWRP
+if '%nb%' == 'E' goto RecTWRPMojito
+if '%nb%' == 'e' goto RecTWRPMojito
 goto RecoveryTwrp
 :DownTwrp 
 cls 
@@ -143,7 +203,7 @@ goto RecoveryTwrp
 :::::: FOX RECOVERY
 :::::: FOX RECOVERY
 :::::: FOX RECOVERY
-:RecOfox
+:RecOfoxMojito
 title Selecione o Ofox 
 cls
 echo.
@@ -153,8 +213,8 @@ echo ------------------------------------------------------------------------
 echo.
 echo.
 echo    1 ) 11.1
-echo    E ) Voltar 
-echo.
+echo    2 ) 11.1 Beta
+echo    E ) Voltar
 echo.
 echo.
 echo.
@@ -162,12 +222,17 @@ echo.
 set nb=
 set /p "nb= Digite algo %UsERNAME% > "
 if '%nb%' == '1' goto RecoveryOfox111
-if '%nb%' == 'e' goto SelRec
-if '%nb%' == 'E' goto SelRec
-goto RecOfox
+if '%nb%' == '2' goto RecoveryOfox111B
+if '%nb%' == 'e' goto SelRecMojito
+if '%nb%' == 'E' goto SelRecMojito
+goto RecOfoxMojito
 :RecoveryOfox111
 set vRec=111
 set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/Ofox/111/111.rar
+goto :RecoveryOfox
+:RecoveryOfox111B
+set vRec=111B
+set linkA1=https://raw.githubusercontent.com/devrodrigopires/arcNoob/main/adb/device/mojito/recovery/Ofox/111B/111B.rar
 goto :RecoveryOfox
 :RecoveryOfox
 title Noob Master %rec% %vRec% 
@@ -189,8 +254,8 @@ set nb=
 set /p "nb=Digite algo %UsERNAME% > "
 if '%nb%' == '1' goto DownOfox 
 if '%nb%' == '2' goto BootIn
-if '%nb%' == 'E' goto RecOfox
-if '%nb%' == 'e' goto RecOfox
+if '%nb%' == 'E' goto RecOfoxMojito
+if '%nb%' == 'e' goto RecOfoxMojito
 goto RecoveryOfox
 :DownOfox 
 cls 
