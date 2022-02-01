@@ -7,12 +7,6 @@ set adb="%cd%\adb\adb.exe"
 set fastboot="%cd%\adb\fastboot.exe"
 cls 
 :::::: SELECIONAR DEVICE
-:::::: SELECIONAR DEVICE
-:::::: SELECIONAR DEVICE
-:::::: SELECIONAR DEVICE
-:::::: SELECIONAR DEVICE
-:::::: SELECIONAR DEVICE
-:::::: SELECIONAR DEVICE
 :SelDevice
 title Selecione o Device !
 cls
