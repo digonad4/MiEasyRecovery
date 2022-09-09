@@ -28,13 +28,13 @@ echo.
 echo.
 echo.
 echo    1 ) Mojito
-echo    2 ) Lavender
+echo.
 echo.
 echo.
 echo.
 echo.
 set nb=
-set /p "nb= Digite sua opção %UsERNAME% > "
+set /p "nb= Digite 1 e tecle enter %UsERNAME% > "
 if '%nb%' == '1' goto SelRecMojito
 if '%nb%' == '2' goto SelRecLavender
 if '%nb%' == '3' goto 
@@ -83,14 +83,14 @@ set Twrps=adb\device\mojito\recovery\twrp
 cls
 echo.
 echo ------------------------------------------------------------------------
-echo   Recovery                            Noob Master - Device - Mojito 
+echo   Twrp                                 Noob Master - Device - Mojito 
 echo ------------------------------------------------------------------------
 echo.
 echo.
 echo    1 ) 3.5.2
 echo    2 ) 3.6.0
+echo    3 ) 3.6.2
 echo    E ) Voltar 
-echo.
 echo.
 echo.
 echo.
@@ -98,6 +98,7 @@ set nb=
 set /p "nb= Digite sua opção %UsERNAME% > "
 if '%nb%' == '1' goto RecoveryTwrp352Mojito
 if '%nb%' == '2' goto RecoveryTwrp360Mojito
+if '%nb%' == '3' goto RecoveryTwrp362Mojito
 if '%nb%' == 'e' goto SelRecMojito
 if '%nb%' == 'E' goto SelRecMojito
 goto RecTWRPMojito
@@ -108,6 +109,10 @@ goto :RecoveryTwrpMojito
 :RecoveryTwrp360Mojito
 set vRec=360
 set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/twrp/360/360.rar
+goto :RecoveryTwrpMojito
+:RecoveryTwrp362Mojito
+set vRec=362
+set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/twrp/362/362.rar
 goto :RecoveryTwrpMojito
 :RecoveryTwrpMojito
 title Noob Master Twrp %vRec% 
@@ -130,13 +135,12 @@ set /p "nb=Digite sua opção %UsERNAME% > "
 if '%nb%' == '1' goto DownTwrpMojito
 if '%nb%' == '2' goto BootInTwrpMojito
 if '%nb%' == '3' goto ExcludeTwrpMojito
-if '%nb%' == 'E' goto RecTWRPMojitoMojito
-if '%nb%' == 'e' goto RecTWRPMojitoMojito
+if '%nb%' == 'E' goto RecTWRPMojito
+if '%nb%' == 'e' goto RecTWRPMojito
 if '%nb%' == 't' goto ExcludeMojito
 goto RecoveryTwrpMojito
 :ExcludeTwrpMojito
 cls
-if exist "%cd%\%Twrps%\%vRec%\%vRec%.rar" ( cls ) else ( goto AvisoDownTwrpMojito )
 rd /s %Twrps%\%vRec%\
 cls 
 echo.
@@ -207,6 +211,7 @@ echo.
 echo.
 timeout 5 > nul
 :ExtractRecoveryTwrpMojito
+if exist "%cd%\%Twrps%\%vRec%\%vRec%.rar" ( cls ) else ( goto AvisoDownTwrpMojito )
 if exist "%cd%\%Twrps%\%vRec%\%vRec%.img" ( goto AvisoFlashTwrpMojito ) else (  cls )
 cls
 echo.
@@ -252,7 +257,7 @@ title Selecione o Ofox
 cls
 echo.
 echo ------------------------------------------------------------------------
-echo   Recovery                            Noob Master - Device - Mojito 
+echo   Orange FOX                           Noob Master - Device - Mojito 
 echo ------------------------------------------------------------------------
 echo.
 echo.

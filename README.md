@@ -4,6 +4,5 @@ New script Noob Master archives test.
 
 Suported devices
 
-Mi A2 / 6X , under development.
-
-Mojito, under development.
+Redmi Note 10 4G - Mojito
+Redmi Note  7 4G Lavender
