@@ -1,10 +1,4 @@
-@echo off
-set $url=https://raw.githubusercontent.com/digonad4/arcNoob/main/ArcNoob.bat
-curl -f -s -o "%~n0.bat" "%$url%"&& (
-fc /B "%~n0.bat" "%~0" >nul|| (copy /y "%~n0.bat" "%~0"&& "%~0"))
-goto script
-:script
-cls
+echo off
 color 03
 mode 72,15
 chcp 65001
@@ -24,6 +18,7 @@ title Selecione o Device !
  if exist "%cd%\adb\unins000.dat"     (echo.) else (goto Adb )
  if exist "%cd%\adb\unins000.exe"     (echo.) else (goto Adb )
  if exist "%cd%\adb\WinRAR\WinRAR.exe"(echo.) else (goto Adb )
+
 cls
 echo.
 echo ------------------------------------------------------------------------
