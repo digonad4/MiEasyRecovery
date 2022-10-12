@@ -1,8 +1,15 @@
 # arcNoob
 
-New script Noob Master archives test.
+Novo script do Noob Master.
 
-Suported devices
+O objetivo deste script é facilitar o boot do seu device no recovery que aqui estará disponivel.
+
+Por enquanto suporta apenas um dispositivo mas em breve devo lançar para mais dispositivos que usam o fastboot e adb para fazer suas modificações e personalizações.
 
 Redmi Note 10 4G - Mojito
-Redmi Note  7 4G Lavender
+
+Lista de Recoverys disponiveis :
+
+    - Team Win Recovery Project ( TWRP )
+    - Orange Fox ( Ofox )
+    - Pixel Experience Recovery 

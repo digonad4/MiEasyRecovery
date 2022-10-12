@@ -58,15 +58,16 @@ echo.
 echo.
 echo    1 ) TWRP
 echo    2 ) OFOX
+echo    3 ) PIXEL EXPERIENCE
+echo.
 echo    E ) Voltar 
-echo.
-echo.
 echo.
 echo.
 set nb=
 set /p "nb= Digite sua opção %UsERNAME% > "
 if '%nb%' == '1' goto RecTWRPMojito
 if '%nb%' == '2' goto RecOFOXMojito
+if '%nb%' == '3' goto RecPixelMojito
 if '%nb%' == 'e' goto SelDevice
 if '%nb%' == 'E' goto SelDevice
 goto SelRecMojito
@@ -631,6 +632,180 @@ echo.
 echo.
 pause > nul
 goto RecoveryTwrpLavender
+:::::: TWRP RECOVERY
+:::::: TWRP RECOVERY
+:::::: TWRP RECOVERY
+:::::: TWRP RECOVERY
+:::::: TWRP RECOVERY
+:::::: TWRP RECOVERY
+:::::: TWRP RECOVERY
+:RecPixelMojito
+title Selecione o Pixel 
+set Pixels=adb\device\mojito\recovery\Pixel
+cls
+echo.
+echo ------------------------------------------------------------------------
+echo   Pixel                                 Noob Master - Device - Mojito 
+echo ------------------------------------------------------------------------
+echo.
+echo.
+echo    1 ) Pixel A12
+echo    2 ) Pixel A13
+echo. 
+echo.
+echo.   E ) Voltar 
+echo.
+echo.
+echo.
+set nb=
+set /p "nb= Digite sua opção %UsERNAME% > "
+if '%nb%' == '1' goto RecoveryPixel2Mojito
+if '%nb%' == '2' goto RecoveryPixel3Mojito
+if '%nb%' == 'e' goto SelRecMojito
+if '%nb%' == 'E' goto SelRecMojito
+goto RecPixelMojito
+
+:RecoveryPixel2Mojito
+set vRec=PEA12
+set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/Pixel/pea12/pea12.rar
+goto :RecoveryPixelMojito
+
+:RecoveryPixel3Mojito
+set vRec=PEA13
+set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/Pixel/pea13/pea13.rar
+goto :RecoveryPixelMojito
+
+:RecoveryPixelMojito
+title Noob Master Pixel %vRec% 
+cls
+echo.
+echo ------------------------------------------------------------------------
+echo   Pixel %vRec%                            Noob Master - Device - Mojito 
+echo ------------------------------------------------------------------------
+echo.
+echo.
+echo    1 ) Baixe e extraia o Pixel %vRec%.rar 
+echo    2 ) Boot no Pixel %vRec%
+echo    3 ) Excluir arquivos %vRec%
+echo    E ) Voltar 
+echo.
+echo.
+echo.
+set nb=
+set /p "nb=Digite sua opção %UsERNAME% > "
+if '%nb%' == '1' goto DownPixelMojito
+if '%nb%' == '2' goto BootInPixelMojito
+if '%nb%' == '3' goto ExcludePixelMojito
+if '%nb%' == 'E' goto RecPixelMojito
+if '%nb%' == 'e' goto RecPixelMojito
+if '%nb%' == 't' goto ExcludeMojito
+goto RecoveryPixelMojito
+:ExcludePixelMojito
+cls
+rd /s %Pixels%\%vRec%\
+cls 
+echo.
+echo.
+echo.
+echo     Arquivos excluidos.
+echo.
+echo.
+echo.
+echo.
+echo.
+timeout 5 > nul
+goto RecoveryPixelMojito
+:DownPixelAvisoMojito
+cls 
+echo.
+echo.
+echo.
+echo     Voce ja baixou o arquivo.
+echo.
+echo.
+echo.
+echo     Vamos para o menu novamente, aguarde...
+echo.
+echo.
+echo.
+timeout 5 > nul
+goto RecoveryPixelMojito
+:AvisoDownPixelMojito
+cls 
+echo.
+echo.
+echo.
+echo     Baixe o arquivo.
+echo.
+echo.
+echo.
+timeout 5 > nul
+goto RecoveryPixelMojito
+:DownPixelMojito 
+cls 
+::: Função que baixa e cria a pasta responsável por armazenar o arquivo dentro do script.
+mkdir %Pixels%\%vRec%\
+if exist "%cd%\%Pixels%\%vRec%\%vRec%.rar" ( goto DownPixelAvisoMojito ) else (  cls )
+echo.
+echo.
+echo.
+echo     Baixando...
+echo.
+echo     Estou criando os diretórios e baixando seu arquivo
+echo.
+echo     Espere...
+echo.
+echo.
+:DownPixelYesMojito
+Powershell -command "& { (New-Object Net.WebClient).DownloadFile('%linkA1%', '%Pixels%\%vRec%\%vRec%.rar') }"
+cls 
+echo.
+echo.
+echo.
+if exist "%cd%\%Pixels%\%vRec%\%vRec%.rar" ( echo     Arquivo Baixado ) else ( echo     O Arquivo Não foi Baixado, vefifique e tente novamente  )
+echo.
+echo.
+echo.
+echo     Digite sua opção para que eu possa extrair o arquivo para você...
+echo.
+echo.
+echo.
+timeout 5 > nul
+:ExtractRecoveryPixelMojito
+if exist "%cd%\%Pixels%\%vRec%\%vRec%.rar" ( cls ) else ( goto AvisoDownPixelMojito )
+if exist "%cd%\%Pixels%\%vRec%\%vRec%.img" ( goto AvisoFlashPixelMojito ) else (  cls )
+cls
+echo.
+echo.
+echo     Extraindo arquivo...
+echo.
+echo.
+"%cd%\adb\WinRAR\WinRAR.exe" x -y -c "%cd%\%Pixels%\%vRec%\%vRec%.rar" "%cd%\%Pixels%\%vRec%\"
+echo.
+echo.
+echo     Pressione algo para voltar ao menu.
+echo     No menu, pressione a opção 2 para boot no Pixel
+echo.
+echo.
+pause > nul
+goto RecoveryPixelMojito
+:BootInPixelMojito
+cls
+if exist "%cd%\%Pixels%\%vRec%\%vRec%.rar" ( goto Ver2PixelMojito ) else ( goto AvisoDownPixelMojito )
+:Ver2PixelMojito
+if exist "%cd%\%Pixels%\%vRec%\%vRec%.img" ( cls ) else ( goto ExtractRecoveryPixelMojito )
+:BootOnPixelMojito
+echo.
+echo        Enviando o comando para o seu device conecte o no modo FASTBOOT
+echo.
+echo.
+echo.
+%fastboot% boot "%cd%\%Pixels%\%vRec%\%vRec%.img"
+echo.
+echo.
+echo.
+pause > nul
+goto RecoveryPixelMojito
 :: Download Adb 
 :: Download Adb 
 :: Download Adb 
