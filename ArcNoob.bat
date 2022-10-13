@@ -92,8 +92,8 @@ echo    1 ) 3.5.2
 echo    2 ) 3.6.0
 echo    3 ) 3.6.2
 echo    4 ) 3.6.2 A12
+echo    5 ) 3.7.0 A12
 echo    E ) Voltar 
-echo.
 echo.
 echo.
 set nb=
@@ -102,6 +102,7 @@ if '%nb%' == '1' goto RecoveryTwrp352Mojito
 if '%nb%' == '2' goto RecoveryTwrp360Mojito
 if '%nb%' == '3' goto RecoveryTwrp362Mojito
 if '%nb%' == '4' goto RecoveryTwrp362A12Mojito
+if '%nb%' == '5' goto RecoveryTwrp370A12Mojito
 if '%nb%' == 'e' goto SelRecMojito
 if '%nb%' == 'E' goto SelRecMojito
 goto RecTWRPMojito
@@ -120,6 +121,10 @@ goto :RecoveryTwrpMojito
 :RecoveryTwrp362A12Mojito
 set vRec=362A12
 set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/twrp/362A12/362A12.rar
+goto :RecoveryTwrpMojito
+:RecoveryTwrp370A12Mojito
+set vRec=370A12
+set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/twrp/370A12/370A12.rar
 goto :RecoveryTwrpMojito
 :RecoveryTwrpMojito
 title Noob Master Twrp %vRec% 
@@ -667,12 +672,13 @@ goto RecPixelMojito
 
 :RecoveryPixel2Mojito
 set vRec=PEA12
-set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/Pixel/pea12/pea12.rar
+set linkA1=https://github.com/digonad4/arcNoob/raw/main/adb/device/mojito/recovery/pixel/pea12/PEA12.rar
+
 goto :RecoveryPixelMojito
 
 :RecoveryPixel3Mojito
 set vRec=PEA13
-set linkA1=https://raw.githubusercontent.com/digonad4/arcNoob/main/adb/device/mojito/recovery/Pixel/pea13/pea13.rar
+set linkA1=https://github.com/digonad4/arcNoob/raw/main/adb/device/mojito/recovery/pixel/pea13/PEA13.rar
 goto :RecoveryPixelMojito
 
 :RecoveryPixelMojito
