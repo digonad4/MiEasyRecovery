@@ -34,7 +34,7 @@ echo.
 echo.
 echo.
 set nb=
-set /p "nb= Digite 1 e tecle enter %UsERNAME% > "
+set /p "nb= Digite sua opção %UsERNAME% > "
 if '%nb%' == '1' goto SelRecMojito
 if '%nb%' == '2' goto SelRecsweet
 if '%nb%' == '3' goto 
