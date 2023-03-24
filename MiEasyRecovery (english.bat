@@ -1,36 +1,3 @@
-::[Bat To Exe Converter]
-::
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFClbSBaLO2SGIroL5uT07u6Unn4YWaIr20LPz7iBbbFd40brFQ==
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRmK+00ySA==
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpCI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAjk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZksaHGQ=
-::ZQ05rAF9IBncCkqN+0xwdVsFAlTMbAs=
-::ZQ05rAF9IAHYFVzEqQIdIVtxTRebfFm/BboK7frijw==
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
-::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATE1HA/LAldSwusPW/uZg==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFClbSBaLO2SGIrAP4/z0/9aqqw04VfEmOL3e2buYJfIKpED8cPY=
-::YB416Ek+ZG8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 echo off
 color 03
 mode 72,15
