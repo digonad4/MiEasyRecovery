@@ -1,7 +1,7 @@
 echo off
 color 03
 mode 72,15
-chcp 65001
+
 pushd "%~dp0"
 set adb="%cd%\adb\adb.exe"
 set fastboot="%cd%\adb\fastboot.exe"
