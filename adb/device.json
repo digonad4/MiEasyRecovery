@@ -1,0 +1,21 @@
+{
+  "devices": [
+    {
+      "name": "Mojito",
+      "identifier": "mojito",
+      "recoveries": [
+        { "name": "TWRP", "file": "twrp.img", "url": "https://github.com/digonad4/MiEasyRecovery/blob/main/adb/device/mojito/twrp.img" },
+        { "name": "OrangeFox", "file": "ofox.img", "url": "https://github.com/digonad4/MiEasyRecovery/blob/main/adb/device/mojito/ofox.img" },
+        { "name": "Pixel Experience", "file": "pixel.img", "url": "https://github.com/digonad4/MiEasyRecovery/blob/main/adb/device/mojito/pixel.img" }
+      ]
+    },
+    {
+      "name": "Sweet",
+      "identifier": "sweet",
+      "recoveries": [
+        { "name": "TWRP", "file": "twrp.img", "url": "https://github.com/digonad4/MiEasyRecovery/blob/main/adb/device/sweet/twrp.img" },
+        { "name": "OrangeFox", "file": "ofox.img", "url": "https://github.com/digonad4/MiEasyRecovery/blob/main/adb/device/sweet/ofox.img" }
+      ]
+    }
+  ]
+}
