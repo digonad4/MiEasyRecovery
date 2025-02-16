@@ -10,25 +10,41 @@ set backup_dir=adb\backup
 set report_file=adb\backup_integrity_report.txt
 set recovery_dir=adb\recoveries
 set remote_log_url=https://yourserver.com/upload_log
+set version_file=adb\version.txt
 
 :: Criar diretório de backup e recovery se não existirem
 if not exist "%backup_dir%" mkdir "%backup_dir%"
 if not exist "%recovery_dir%" mkdir "%recovery_dir%"
+if not exist "adb" mkdir "adb"
 
-:: Verificação de atualização com confirmação do usuário
+:: Verificação de versão
 echo Verificando atualizações...
 Powershell -command "& { (New-Object Net.WebClient).DownloadFile('%script_url%', 'MiEasyRecovery_new.bat') }"
-fc /b MiEasyRecovery.bat MiEasyRecovery_new.bat > nul
-if errorlevel 1 (
-    echo Atualizacao encontrada! Deseja aplicar? (S/N)
-    set /p "update_choice=Digite sua opcao: "
-    if /i "%update_choice%" == "S" (
-        move /Y MiEasyRecovery_new.bat MiEasyRecovery.bat
-        start MiEasyRecovery.bat
-        exit
+for /f "delims=" %%v in ('findstr /C:"version" MiEasyRecovery_new.bat') do set "remote_version=%%v"
+set "remote_version=!remote_version:version=!"
+set "remote_version=!remote_version: =!"
+
+if exist "MiEasyRecovery.bat" (
+    for /f "delims=" %%v in ('findstr /C:"version" MiEasyRecovery.bat') do set "local_version=%%v"
+    set "local_version=!local_version:version=!"
+    set "local_version=!local_version: =!"
+    
+    if "!local_version!" NEQ "!remote_version!" (
+        echo Atualizacao encontrada! Versão local: !local_version! | Versão remota: !remote_version!
+        set /p "update_choice=Deseja aplicar? (S/N): "
+        if /i "!update_choice!" == "S" (
+            move /Y MiEasyRecovery_new.bat MiEasyRecovery.bat
+            start MiEasyRecovery.bat
+            exit
+        ) else (
+            del MiEasyRecovery_new.bat
+        )
     ) else (
+        echo Você está usando a versão mais recente: !local_version!
         del MiEasyRecovery_new.bat
     )
+) else (
+    move /Y MiEasyRecovery_new.bat MiEasyRecovery.bat
 )
 
 :: Baixar lista de dispositivos
