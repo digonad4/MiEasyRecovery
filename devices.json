@@ -1,0 +1,24 @@
+{
+  "devices": {
+    "mojito": {
+      "name": "Mojito",
+      "recoveries": {
+        "twrp": [
+          {"version": "3.5.2", "link": "https://raw.githubusercontent.com/digonad4/mieasyrecovery/main/adb/device/mojito/recovery/twrp/352/352.rar"},
+          {"version": "3.6.0", "link": "https://raw.githubusercontent.com/digonad4/mieasyrecovery/main/adb/device/mojito/recovery/twrp/360/360.rar"}
+        ],
+        "ofox": [
+          {"version": "11.1", "link": "https://raw.githubusercontent.com/digonad4/mieasyrecovery/main/adb/device/mojito/recovery/ofox/111/111.rar"}
+        ]
+      }
+    },
+    "sweet": {
+      "name": "Sweet",
+      "recoveries": {
+        "twrp": [
+          {"version": "3.6.1", "link": "https://raw.githubusercontent.com/digonad4/mieasyrecovery/main/adb/device/sweet/recovery/twrp/361/361.rar"}
+        ]
+      }
+    }
+  }
+}
